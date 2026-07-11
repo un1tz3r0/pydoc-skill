@@ -24,7 +24,7 @@
 
 - [ ] `./install.sh` → copies `pydoc/` to `~/.claude/skills/pydoc/`; then `/pydoc`
       is live. (Or `./install.sh --symlink` to keep edits live from this repo.)
-- [ ] Optional: `git init` + push to GitHub so `update.sh` has a remote to pull.
+- [x] `git init` + push to GitHub (un1tz3r0/pydoc-skill) — `update.sh` now has a remote.
 
 ## Milestone 2 — local resource server (deferred)
 
