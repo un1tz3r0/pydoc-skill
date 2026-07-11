@@ -1,0 +1,8 @@
+# Extra deletion targets for clean.sh (scripts/clean.py), gitignore-style globs.
+# clean.sh already removes CACHEDIR.TAG-tagged dirs, .venv/venv, __pycache__,
+# *.pyc/*.pyo and .DS_Store automatically; list anything else here. Source files
+# (*.py, *.sh, *.md) and VCS (.git) are protected and never removed.
+
+*.skill
+*.zip
+*.egg-info
