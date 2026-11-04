@@ -1,7 +1,7 @@
 ---
 name: pydoc
 description: >-
-  Look up real Python documentation for any importable object in the system
+  Look up Python documentation for any importable object in the system
   Python — signatures, type annotations, and docstrings, rendered as markdown.
   Resolves a fully-qualified name (module, package, class, function, method, or
   attribute) and dumps its docs; lists the contents of packages; and searches
@@ -11,13 +11,16 @@ description: >-
   Invoke as `/pydoc <fully.qualified.name>`, `/pydoc --list [ROOT]`, or
   `/pydoc --find [ROOT] QUERY`.
 when_to_use: >-
-  Triggers: "what's the signature of X", "show the docstring for X", "what does
-  module/package X contain", "find the function/class named Y", checking a real
+  Triggers: "what's the signature of X", "show the python docs for X", "what does
+  module/package X contain", "how do I use function/class X of package Y", "find the function/class named Y", checking a real
   API before writing Python against it, exploring an unfamiliar installed
   library. Prefer this over recalling an API from memory when the package is
   installed locally.
-compatibility: Requires the system python3 (3.10+ recommended). Standard library only — no third-party dependencies, no virtualenv.
+compatibility: Requires python3
 allowed-tools: Bash(python3:*)
+disable-model-invocation: false
+user-invocable: true
+
 ---
 
 # /pydoc — Python documentation lookup
